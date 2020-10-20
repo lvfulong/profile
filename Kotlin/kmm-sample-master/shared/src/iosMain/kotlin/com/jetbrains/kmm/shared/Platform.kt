@@ -3,6 +3,7 @@ package com.jetbrains.kmm.shared
 import platform.UIKit.UIDevice
 import kotlin.system.*
 import kotlin.random.Random
+import kotlin.math.*
 
 actual class Platform actual constructor() {
     actual val platform: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
@@ -247,19 +248,24 @@ fun testMatrixAttribute() {
 }
 
 
-fun ffff(): Double {
-    //return Random.nextDouble(100.0) + Random.nextDouble(100.0);
-    return 100.0 + 100.0;
-}
-fun ffff2(): Double {
-    //return Random.nextDouble(100.0) + Random.nextDouble(100.0);
-    return 100.0 + 100.0;
+fun ffff(i:Double) {
+    var a = i + 1;
+    var b = 2.3;
+    if (a > b) {
+        ++a;
+    }
+    else {
+        b = b + 1;
+    }
+    if (a == b) {
+        b = b + 1;
+    }
+    var c = a * b + a / b -  a.pow(2.0);
 }
 fun testFunction() {
     val now = getTimeMillis();
-    for ( i in 0 until 100000000) {
-        ffff();
-        ffff2();
+    for ( i in 0 until 10000000000) {
+        ffff(i.toDouble());
     }
     println("testFunction " + (getTimeMillis() - now));
 }
