@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LayaBox.iml" filepath="$PROJECT_DIR$/.idea/modules/LayaBox.iml" group="LayaBox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="LayaBox/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_commonMain.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_commonTest.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_iosMain.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_iosTest.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_jsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_jsMain.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_jsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_jsTest.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_wasmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_wasmMain.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_wasmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_wasmTest.iml" group="app" />
+    </modules>
+  </component>
+</project>

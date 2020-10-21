@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86'
+ninja: no work to do.

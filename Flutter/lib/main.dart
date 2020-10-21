@@ -343,12 +343,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void testFunction() {
     var now = DateTime.now().millisecondsSinceEpoch;
+    double sum = 0.0;
     for (var i = 0; i < 100000000; i++) {
-      ffff(i.toDouble());
+      sum += ffff(i.toDouble());
     }
 
     var t = DateTime.now().millisecondsSinceEpoch - now;
-    print("testFunction ${t}ms");
+    print("testFunction ${t}ms ${sum}");
   }
 
   //循环测试
@@ -359,7 +360,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var iteration = 0;
     var iterations = 2;
     var innerloop = 0;
-    var sum = 0;
+    double sum = 0.0;
     var arrayLength = 100000000;
     var array = new List(arrayLength);
 
@@ -372,7 +373,7 @@ class _MyHomePageState extends State<MyHomePage> {
       }
     }
     var t = DateTime.now().millisecondsSinceEpoch - now;
-    print("testLoop ${t}ms");
+    print("testLoop ${t}ms ${sum}");
   }
 
   @override

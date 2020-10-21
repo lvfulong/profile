@@ -1,0 +1,15 @@
+# ninja log v5
+1	823	1603263202	CMakeFiles/native_app_glue.dir/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c.o	abdc10297d825938
+0	1671	1603263203	CMakeFiles/native-activity.dir/main.cpp.o	d007c01a788e0316
+824	4009	1603263205	libnative_app_glue.a	d970e659cd5912b5
+4009	4218	1603263205	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40
+3	806	1603263968	CMakeFiles/native-activity.dir/main.cpp.o	c36e27f168d6f2e3
+806	978	1603263968	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40
+3	3224	1603264174	CMakeFiles/native-activity.dir/main.cpp.o	c36e27f168d6f2e3
+3225	3463	1603264174	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40
+4	1266	1603264256	CMakeFiles/native-activity.dir/main.cpp.o	c36e27f168d6f2e3
+1266	1461	1603264256	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40
+3	2632	1603264755	CMakeFiles/native-activity.dir/main.cpp.o	c36e27f168d6f2e3
+2632	2877	1603264755	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40
+3	4944	1603265142	CMakeFiles/native-activity.dir/main.cpp.o	c36e27f168d6f2e3
+4945	5370	1603265143	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-activity.so	ab1107e7bcf5eb40

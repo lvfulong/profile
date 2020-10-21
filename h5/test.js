@@ -233,11 +233,12 @@ function ffff(i) {
 
 function testFunction() {
     var now = Date.now();
+    var sum = 0.0;
     for (var i = 0; i < 100000000; i++) {
-        ffff(i);
+        sum += ffff(i);
     }
     timeTestFunction = Date.now() - now;
-
+    console.log(sum);
 
 }
 var timeTestMatrixArray = 0;
@@ -274,6 +275,6 @@ function testLoop() {
         }
     }
     timeTestLoop = Date.now() - now;
-
+    console.log(sum);
     array = 0
 }

@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86",
+  "command": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android16 --gcc-toolchain=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dnative_activity_EXPORTS -I/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue -I/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/../../../../../Test/Test  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu++11 -Wall -Werror -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/native-activity.dir/main.cpp.o -c /Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/main.cpp",
+  "file": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/main.cpp"
+},
+
+{
+  "directory": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86",
+  "command": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android16 --gcc-toolchain=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/native_app_glue.dir/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c.o   -c /Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c",
+  "file": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c"
+}
+]

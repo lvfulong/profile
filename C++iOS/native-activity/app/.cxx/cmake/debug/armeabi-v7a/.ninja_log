@@ -1,0 +1,5 @@
+# ninja log v5
+2	920	1603265635	CMakeFiles/native_app_glue.dir/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c.o	9877a09f1e203b8d
+0	1838	1603265636	CMakeFiles/native-activity.dir/main.cpp.o	976add011e34918d
+921	3467	1603265637	libnative_app_glue.a	1e059d4d376fbf8
+3467	3621	1603265637	/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-activity.so	edfee0352eda1338

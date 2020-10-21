@@ -265,10 +265,11 @@ fun ffff(i:Double):Double{
 }
 fun testFunction() {
     val now = getTimeMillis();
+    var sum = 0.0;
     for ( i in 0 until 100000000) {
-        ffff(i.toDouble());
+        sum += ffff(i.toDouble());
     }
-    println("testFunction " + (getTimeMillis() - now));
+    println("testFunction " + (getTimeMillis() - now)+"  " + sum);
 }
 
 fun testLoop() {
@@ -288,6 +289,6 @@ fun testLoop() {
             sum += array[(iteration + innerloop) % array_length];
         }
     }
-    println("testLoop " + (getTimeMillis() - now));
+    println("testLoop " + (getTimeMillis() - now) +"  " + sum);
     //array = 0
 }

@@ -1,0 +1,64 @@
+{
+  "stringTable": {
+    "0": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dnative_activity_EXPORTS -I/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue -I/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/../../../../../Test/Test -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=gnu++11 -Wall -Werror -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=i686-none-linux-android16 --gcc-toolchain=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/build/cmake/platforms.cmake",
+    "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/LayaBox/Android/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/LayaBox/Android/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native_app_glue-Debug-x86": {
+      "buildCommand": "/Users/LayaBox/Android/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86\" native_app_glue",
+      "buildType": "debug",
+      "toolchain": "160184680",
+      "abi": "x86",
+      "artifactName": "native_app_glue",
+      "files": [
+        {
+          "src": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/sources/android/native_app_glue/android_native_app_glue.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86/libnative_app_glue.a",
+      "runtimeFiles": []
+    },
+    "native-activity-Debug-x86": {
+      "buildCommand": "/Users/LayaBox/Android/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/.cxx/cmake/debug/x86\" native-activity",
+      "buildType": "debug",
+      "toolchain": "160184680",
+      "abi": "x86",
+      "artifactName": "native-activity",
+      "files": [
+        {
+          "src": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/src/main/cpp/main.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/LayaBox/lvfulong/Profile/C++iOS/native-activity/app/build/intermediates/cmake/debug/obj/x86/libnative-activity.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "160184680": {
+      "cCompilerExecutable": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/LayaBox/Android/android-sdk-macosx/ndk/21.3.6528147/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

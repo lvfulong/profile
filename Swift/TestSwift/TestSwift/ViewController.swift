@@ -262,12 +262,13 @@ func ffff(i:Double)->Double {
 func  testFunction() {
 
     let now = Date().timeIntervalSince1970;
+    var sum:Double = 0.0;
     for i in 0..<100000000 {
-        ffff(i: Double(i));
+        sum += ffff(i: Double(i));
     }
 
     let t = Date().timeIntervalSince1970 - now;
-    print("testFunction \(t*1000)ms");
+    print("testFunction \(t*1000)ms \(sum)");
   }
 func testLoop() {
     let now = Date().timeIntervalSince1970;
@@ -286,7 +287,7 @@ func testLoop() {
       }
     }
     let t = Date().timeIntervalSince1970 - now;
-    print("testLoop \(t*1000)ms");
+    print("testLoop \(t*1000)ms \(sum)");
   }
 
 class ViewController: UIViewController {

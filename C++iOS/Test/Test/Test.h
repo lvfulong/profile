@@ -215,7 +215,11 @@ void testMatrixArray() {
       Matrix44Array::multiplyMatrices44(lhs, rhs, out);
     }
     auto duration = duration_cast<milliseconds>(system_clock::now() - start);
+#ifdef ANDROID
+    LOGI("testMatrixArray  %f ms\n",double(duration.count()));
+#else
     printf("testMatrixArray  %f ms\n",double(duration.count()));
+#endif
   }
 
 void testMatrixAttribute() {
@@ -232,7 +236,11 @@ void testMatrixAttribute() {
   }
 
     auto duration = duration_cast<milliseconds>(system_clock::now() - start);
+#ifdef ANDROID
+    LOGI("testMatrixAttribute  %f ms\n",double(duration.count()));
+#else
   printf("testMatrixAttribute  %f ms\n",double(duration.count()));
+#endif
 }
 
 double ffff(double i) {
@@ -259,11 +267,16 @@ double ffff(double i) {
 
 void testFunction() {
     auto start = system_clock::now();
+    double sum = 0;
   for (auto i = 0; i < 100000000; i++) {
-    ffff(i);
+      sum += ffff(i);
   }
     auto duration = duration_cast<milliseconds>(system_clock::now() - start);
-    printf("testFunction %f ms\n",double(duration.count()));
+#ifdef ANDROID
+    LOGI("testFunction %f ms %f \n",double(duration.count()), sum);
+#else
+    printf("testFunction %f ms %f \n",double(duration.count()), sum);
+#endif
 }
 void testLoop()
 {
@@ -283,8 +296,11 @@ void testLoop()
             sum += array[(iteration + innerloop) % array_length];
     
     auto duration = duration_cast<milliseconds>(system_clock::now() - start);
-    
-    printf("testLoop %f ms\n",double(duration.count()));
+#ifdef ANDROID
+    LOGI("testLoop %f ms %f\n",double(duration.count()),sum);
+#else
+    printf("testLoop %f ms %f\n",double(duration.count()),sum);
+#endif
         
     
     /*auto duration = duration_cast<microseconds>(system_clock::now() - start);
