@@ -1,95 +1,95 @@
 class Matrix44Array {
-	constructor() {
-		this.m = new Float32Array(16);
-	}
-   randomSetUp() {
-    this.m[0 + 0 * 4] = Math.random() * 100;
-    this.m[0 + 1 * 4] = Math.random() * 100;
-    this.m[0 + 2 * 4] = Math.random() * 100;
-    this.m[0 + 3 * 4] = Math.random() * 100;
-    this.m[1 + 0 * 4] = Math.random() * 100;
-    this.m[1 + 1 * 4] = Math.random() * 100;
-    this.m[1 + 2 * 4] = Math.random() * 100;
-    this.m[1 + 3 * 4] = Math.random() * 100;
-    this.m[2 + 0 * 4] = Math.random() * 100;
-    this.m[2 + 1 * 4] = Math.random() * 100;
-    this.m[2 + 2 * 4] = Math.random() * 100;
-    this.m[2 + 3 * 4] = Math.random() * 100;
-    this.m[3 + 0 * 4] = Math.random() * 100;
-    this.m[3 + 1 * 4] = Math.random() * 100;
-    this.m[3 + 2 * 4] = Math.random() * 100;
-    this.m[3 + 3 * 4] = Math.random() * 100;
-  }
+    constructor() {
+        this.m = new Float32Array(16);
+    }
+    randomSetUp() {
+        this.m[0 + 0 * 4] = 1.0; //Math.random() * 100;
+        this.m[0 + 1 * 4] = 2.0; //Math.random() * 100;
+        this.m[0 + 2 * 4] = 3.0; //Math.random() * 100;
+        this.m[0 + 3 * 4] = 4.0; //Math.random() * 100;
+        this.m[1 + 0 * 4] = 5.0; //Math.random() * 100;
+        this.m[1 + 1 * 4] = 6.0; //Math.random() * 100;
+        this.m[1 + 2 * 4] = 7.0; //Math.random() * 100;
+        this.m[1 + 3 * 4] = 8.0; //Math.random() * 100;
+        this.m[2 + 0 * 4] = 9.0; //Math.random() * 100;
+        this.m[2 + 1 * 4] = 10.0; //Math.random() * 100;
+        this.m[2 + 2 * 4] = 11.0; //Math.random() * 100;
+        this.m[2 + 3 * 4] = 12.0; //Math.random() * 100;
+        this.m[3 + 0 * 4] = 13.0; //Math.random() * 100;
+        this.m[3 + 1 * 4] = 14.0; //Math.random() * 100;
+        this.m[3 + 2 * 4] = 15.0; //Math.random() * 100;
+        this.m[3 + 3 * 4] = 16.0; //Math.random() * 100;
+    }
 
-  static multiplyMatrices44(lhs,rhs,out){
-    out.m[0 + 0 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 0 * 4] +
-        lhs.m[0 + 1 * 4] * rhs.m[1 + 0 * 4] +
-        lhs.m[0 + 2 * 4] * rhs.m[2 + 0 * 4] +
-        lhs.m[0 + 3 * 4] * rhs.m[3 + 0 * 4];
-    out.m[0 + 1 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 1 * 4] +
-        lhs.m[0 + 1 * 4] * rhs.m[1 + 1 * 4] +
-        lhs.m[0 + 2 * 4] * rhs.m[2 + 1 * 4] +
-        lhs.m[0 + 3 * 4] * rhs.m[3 + 1 * 4];
-    out.m[0 + 2 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 2 * 4] +
-        lhs.m[0 + 1 * 4] * rhs.m[1 + 2 * 4] +
-        lhs.m[0 + 2 * 4] * rhs.m[2 + 2 * 4] +
-        lhs.m[0 + 3 * 4] * rhs.m[3 + 2 * 4];
-    out.m[0 + 3 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 3 * 4] +
-        lhs.m[0 + 1 * 4] * rhs.m[1 + 3 * 4] +
-        lhs.m[0 + 2 * 4] * rhs.m[2 + 3 * 4] +
-        lhs.m[0 + 3 * 4] * rhs.m[3 + 3 * 4];
+    static multiplyMatrices44(lhs, rhs, out) {
+        out.m[0 + 0 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 0 * 4] +
+            lhs.m[0 + 1 * 4] * rhs.m[1 + 0 * 4] +
+            lhs.m[0 + 2 * 4] * rhs.m[2 + 0 * 4] +
+            lhs.m[0 + 3 * 4] * rhs.m[3 + 0 * 4];
+        out.m[0 + 1 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 1 * 4] +
+            lhs.m[0 + 1 * 4] * rhs.m[1 + 1 * 4] +
+            lhs.m[0 + 2 * 4] * rhs.m[2 + 1 * 4] +
+            lhs.m[0 + 3 * 4] * rhs.m[3 + 1 * 4];
+        out.m[0 + 2 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 2 * 4] +
+            lhs.m[0 + 1 * 4] * rhs.m[1 + 2 * 4] +
+            lhs.m[0 + 2 * 4] * rhs.m[2 + 2 * 4] +
+            lhs.m[0 + 3 * 4] * rhs.m[3 + 2 * 4];
+        out.m[0 + 3 * 4] = lhs.m[0 + 0 * 4] * rhs.m[0 + 3 * 4] +
+            lhs.m[0 + 1 * 4] * rhs.m[1 + 3 * 4] +
+            lhs.m[0 + 2 * 4] * rhs.m[2 + 3 * 4] +
+            lhs.m[0 + 3 * 4] * rhs.m[3 + 3 * 4];
 
-    out.m[1 + 0 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 0 * 4] +
-        lhs.m[1 + 1 * 4] * rhs.m[1 + 0 * 4] +
-        lhs.m[1 + 2 * 4] * rhs.m[2 + 0 * 4] +
-        lhs.m[1 + 3 * 4] * rhs.m[3 + 0 * 4];
-    out.m[1 + 1 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 1 * 4] +
-        lhs.m[1 + 1 * 4] * rhs.m[1 + 1 * 4] +
-        lhs.m[1 + 2 * 4] * rhs.m[2 + 1 * 4] +
-        lhs.m[1 + 3 * 4] * rhs.m[3 + 1 * 4];
-    out.m[1 + 2 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 2 * 4] +
-        lhs.m[1 + 1 * 4] * rhs.m[1 + 2 * 4] +
-        lhs.m[1 + 2 * 4] * rhs.m[2 + 2 * 4] +
-        lhs.m[1 + 3 * 4] * rhs.m[3 + 2 * 4];
-    out.m[1 + 3 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 3 * 4] +
-        lhs.m[1 + 1 * 4] * rhs.m[1 + 3 * 4] +
-        lhs.m[1 + 2 * 4] * rhs.m[2 + 3 * 4] +
-        lhs.m[1 + 3 * 4] * rhs.m[3 + 3 * 4];
+        out.m[1 + 0 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 0 * 4] +
+            lhs.m[1 + 1 * 4] * rhs.m[1 + 0 * 4] +
+            lhs.m[1 + 2 * 4] * rhs.m[2 + 0 * 4] +
+            lhs.m[1 + 3 * 4] * rhs.m[3 + 0 * 4];
+        out.m[1 + 1 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 1 * 4] +
+            lhs.m[1 + 1 * 4] * rhs.m[1 + 1 * 4] +
+            lhs.m[1 + 2 * 4] * rhs.m[2 + 1 * 4] +
+            lhs.m[1 + 3 * 4] * rhs.m[3 + 1 * 4];
+        out.m[1 + 2 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 2 * 4] +
+            lhs.m[1 + 1 * 4] * rhs.m[1 + 2 * 4] +
+            lhs.m[1 + 2 * 4] * rhs.m[2 + 2 * 4] +
+            lhs.m[1 + 3 * 4] * rhs.m[3 + 2 * 4];
+        out.m[1 + 3 * 4] = lhs.m[1 + 0 * 4] * rhs.m[0 + 3 * 4] +
+            lhs.m[1 + 1 * 4] * rhs.m[1 + 3 * 4] +
+            lhs.m[1 + 2 * 4] * rhs.m[2 + 3 * 4] +
+            lhs.m[1 + 3 * 4] * rhs.m[3 + 3 * 4];
 
-    out.m[2 + 0 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 0 * 4] +
-        lhs.m[2 + 1 * 4] * rhs.m[1 + 0 * 4] +
-        lhs.m[2 + 2 * 4] * rhs.m[2 + 0 * 4] +
-        lhs.m[2 + 3 * 4] * rhs.m[3 + 0 * 4];
-    out.m[2 + 1 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 1 * 4] +
-        lhs.m[2 + 1 * 4] * rhs.m[1 + 1 * 4] +
-        lhs.m[2 + 2 * 4] * rhs.m[2 + 1 * 4] +
-        lhs.m[2 + 3 * 4] * rhs.m[3 + 1 * 4];
-    out.m[2 + 2 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 2 * 4] +
-        lhs.m[2 + 1 * 4] * rhs.m[1 + 2 * 4] +
-        lhs.m[2 + 2 * 4] * rhs.m[2 + 2 * 4] +
-        lhs.m[2 + 3 * 4] * rhs.m[3 + 2 * 4];
-    out.m[2 + 3 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 3 * 4] +
-        lhs.m[2 + 1 * 4] * rhs.m[1 + 3 * 4] +
-        lhs.m[2 + 2 * 4] * rhs.m[2 + 3 * 4] +
-        lhs.m[2 + 3 * 4] * rhs.m[3 + 3 * 4];
+        out.m[2 + 0 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 0 * 4] +
+            lhs.m[2 + 1 * 4] * rhs.m[1 + 0 * 4] +
+            lhs.m[2 + 2 * 4] * rhs.m[2 + 0 * 4] +
+            lhs.m[2 + 3 * 4] * rhs.m[3 + 0 * 4];
+        out.m[2 + 1 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 1 * 4] +
+            lhs.m[2 + 1 * 4] * rhs.m[1 + 1 * 4] +
+            lhs.m[2 + 2 * 4] * rhs.m[2 + 1 * 4] +
+            lhs.m[2 + 3 * 4] * rhs.m[3 + 1 * 4];
+        out.m[2 + 2 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 2 * 4] +
+            lhs.m[2 + 1 * 4] * rhs.m[1 + 2 * 4] +
+            lhs.m[2 + 2 * 4] * rhs.m[2 + 2 * 4] +
+            lhs.m[2 + 3 * 4] * rhs.m[3 + 2 * 4];
+        out.m[2 + 3 * 4] = lhs.m[2 + 0 * 4] * rhs.m[0 + 3 * 4] +
+            lhs.m[2 + 1 * 4] * rhs.m[1 + 3 * 4] +
+            lhs.m[2 + 2 * 4] * rhs.m[2 + 3 * 4] +
+            lhs.m[2 + 3 * 4] * rhs.m[3 + 3 * 4];
 
-    out.m[3 + 0 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 0 * 4] +
-        lhs.m[3 + 1 * 4] * rhs.m[1 + 0 * 4] +
-        lhs.m[3 + 2 * 4] * rhs.m[2 + 0 * 4] +
-        lhs.m[3 + 3 * 4] * rhs.m[3 + 0 * 4];
-    out.m[3 + 1 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 1 * 4] +
-        lhs.m[3 + 1 * 4] * rhs.m[1 + 1 * 4] +
-        lhs.m[3 + 2 * 4] * rhs.m[2 + 1 * 4] +
-        lhs.m[3 + 3 * 4] * rhs.m[3 + 1 * 4];
-    out.m[3 + 2 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 2 * 4] +
-        lhs.m[3 + 1 * 4] * rhs.m[1 + 2 * 4] +
-        lhs.m[3 + 2 * 4] * rhs.m[2 + 2 * 4] +
-        lhs.m[3 + 3 * 4] * rhs.m[3 + 2 * 4];
-    out.m[3 + 3 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 3 * 4] +
-        lhs.m[3 + 1 * 4] * rhs.m[1 + 3 * 4] +
-        lhs.m[3 + 2 * 4] * rhs.m[2 + 3 * 4] +
-        lhs.m[3 + 3 * 4] * rhs.m[3 + 3 * 4];
-  }
+        out.m[3 + 0 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 0 * 4] +
+            lhs.m[3 + 1 * 4] * rhs.m[1 + 0 * 4] +
+            lhs.m[3 + 2 * 4] * rhs.m[2 + 0 * 4] +
+            lhs.m[3 + 3 * 4] * rhs.m[3 + 0 * 4];
+        out.m[3 + 1 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 1 * 4] +
+            lhs.m[3 + 1 * 4] * rhs.m[1 + 1 * 4] +
+            lhs.m[3 + 2 * 4] * rhs.m[2 + 1 * 4] +
+            lhs.m[3 + 3 * 4] * rhs.m[3 + 1 * 4];
+        out.m[3 + 2 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 2 * 4] +
+            lhs.m[3 + 1 * 4] * rhs.m[1 + 2 * 4] +
+            lhs.m[3 + 2 * 4] * rhs.m[2 + 2 * 4] +
+            lhs.m[3 + 3 * 4] * rhs.m[3 + 2 * 4];
+        out.m[3 + 3 * 4] = lhs.m[3 + 0 * 4] * rhs.m[0 + 3 * 4] +
+            lhs.m[3 + 1 * 4] * rhs.m[1 + 3 * 4] +
+            lhs.m[3 + 2 * 4] * rhs.m[2 + 3 * 4] +
+            lhs.m[3 + 3 * 4] * rhs.m[3 + 3 * 4];
+    }
 }
 class Matrix44 {
     //num m00, m01, m02, m03;
@@ -97,22 +97,22 @@ class Matrix44 {
     //num m20, m21, m22, m23;
     //num m30, m31, m32, m33;
     randomSetUp() {
-        this.m00 = Math.random() * 100;
-        this.m01 = Math.random() * 100;
-        this.m02 = Math.random() * 100;
-        this.m03 = Math.random() * 100;
-        this.m10 = Math.random() * 100;
-        this.m11 = Math.random() * 100;
-        this.m12 = Math.random() * 100;
-        this.m13 = Math.random() * 100;
-        this.m20 = Math.random() * 100;
-        this.m21 = Math.random() * 100;
-        this.m22 = Math.random() * 100;
-        this.m23 = Math.random() * 100;
-        this.m30 = Math.random() * 100;
-        this.m31 = Math.random() * 100;
-        this.m32 = Math.random() * 100;
-        this.m33 = Math.random() * 100;
+        this.m00 = 1.0; //Math.random() * 100;
+        this.m01 = 2.0; //Math.random() * 100;
+        this.m02 = 3.0; //Math.random() * 100;
+        this.m03 = 4.0; //Math.random() * 100;
+        this.m10 = 5.0; //Math.random() * 100;
+        this.m11 = 6.0; //Math.random() * 100;
+        this.m12 = 7.0; //Math.random() * 100;
+        this.m13 = 8.0; //Math.random() * 100;
+        this.m20 = 9.0; //Math.random() * 100;
+        this.m21 = 10.0; //Math.random() * 100;
+        this.m22 = 11.0; //Math.random() * 100;
+        this.m23 = 12.0; //Math.random() * 100;
+        this.m30 = 13.0; //Math.random() * 100;
+        this.m31 = 14.0; //Math.random() * 100;
+        this.m32 = 15.0; //Math.random() * 100;
+        this.m33 = 16.0; //Math.random() * 100;
     }
 
     static multiplyMatrices44(lhs, rhs, out) {
@@ -185,20 +185,23 @@ class Matrix44 {
             lhs.m33 * rhs.m33;
     }
 }
+
 function testMatrixArray() {
     var now = Date.now();
-  
+
     var lhs = new Matrix44Array();
     var rhs = new Matrix44Array();
     var out = new Matrix44Array();
 
     for (var i = 0; i < 1000000; i++) {
-      lhs.randomSetUp();
-      rhs.randomSetUp();
-      Matrix44Array.multiplyMatrices44(lhs, rhs, out);
+        lhs.randomSetUp();
+        rhs.randomSetUp();
+        Matrix44Array.multiplyMatrices44(lhs, rhs, out);
     }
-	console.log("testMatrixArray " + (Date.now() - now));
-  }
+    timeTestMatrixArray = Date.now() - now;
+
+}
+
 function testMatrixAttribute() {
     var now = Date.now();
 
@@ -211,25 +214,47 @@ function testMatrixAttribute() {
         rhs.randomSetUp();
         Matrix44.multiplyMatrices44(lhs, rhs, out);
     }
-    console.log("testMatrixAttribute " + (Date.now() - now));
+    timeTestMatrixAttribute = Date.now() - now;
+
+
 }
 
-function ffff() {
-    return Math.random() * 100 + Math.random() * 100;
+function ffff(i) {
+    var a = i + 1;
+    var b = 2.3;
+    if (a > b) {
+        ++a;
+    } else {
+        b = b + 1;
+    }
+    var c = a * b + a / b - Math.pow(a, 2);
+    return c;
 }
 
 function testFunction() {
     var now = Date.now();
     for (var i = 0; i < 100000000; i++) {
-        ffff();
+        ffff(i);
     }
-    console.log("testFunction " + (Date.now() - now));
+    timeTestFunction = Date.now() - now;
+
+
 }
+var timeTestMatrixArray = 0;
+var timeTestMatrixAttribute = 0;
+var timeTestFunction = 0;
+var timeTestLoop = 0;
 console.log("test start ...");
 testMatrixArray();
 testMatrixAttribute();
 testFunction();
 testLoop();
+var s = "testMatrixAttribute " + timeTestMatrixAttribute + "\n" +
+    "testMatrixArray " + timeTestMatrixArray + "\n" +
+    "testFunction " + timeTestFunction + "\n" +
+    "testLoop " + timeTestLoop;
+
+alert(s);
 
 function testLoop() {
     var now = Date.now();
@@ -248,6 +273,7 @@ function testLoop() {
             sum += array[(iteration + innerloop) % array_length];
         }
     }
-    console.log("testLoop " + (Date.now() - now));
+    timeTestLoop = Date.now() - now;
+
     array = 0
 }

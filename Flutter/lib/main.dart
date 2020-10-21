@@ -52,24 +52,40 @@ class MyHomePage extends StatefulWidget {
 }
 
 class Matrix44Array {
-  var m = new List<num>(16);
-  void randomSetUp(Random r) {
-    m[0 + 0 * 4] = r.nextDouble() * 100;
-    m[0 + 1 * 4] = r.nextDouble() * 100;
-    m[0 + 2 * 4] = r.nextDouble() * 100;
-    m[0 + 3 * 4] = r.nextDouble() * 100;
-    m[1 + 0 * 4] = r.nextDouble() * 100;
-    m[1 + 1 * 4] = r.nextDouble() * 100;
-    m[1 + 2 * 4] = r.nextDouble() * 100;
-    m[1 + 3 * 4] = r.nextDouble() * 100;
-    m[2 + 0 * 4] = r.nextDouble() * 100;
-    m[2 + 1 * 4] = r.nextDouble() * 100;
-    m[2 + 2 * 4] = r.nextDouble() * 100;
-    m[2 + 3 * 4] = r.nextDouble() * 100;
-    m[3 + 0 * 4] = r.nextDouble() * 100;
-    m[3 + 1 * 4] = r.nextDouble() * 100;
-    m[3 + 2 * 4] = r.nextDouble() * 100;
-    m[3 + 3 * 4] = r.nextDouble() * 100;
+  var m = new List<double>(16);
+  void randomSetUp(/*Random r*/) {
+    m[0 + 0 * 4] = 1.0;
+    //r.nextDouble() * 100;
+    m[0 + 1 * 4] = 2.0;
+    //r.nextDouble() * 100;
+    m[0 + 2 * 4] = 3.0;
+    //r.nextDouble() * 100;
+    m[0 + 3 * 4] = 4.0;
+    //r.nextDouble() * 100;
+    m[1 + 0 * 4] = 5.0;
+    //r.nextDouble() * 100;
+    m[1 + 1 * 4] = 6.0;
+    //r.nextDouble() * 100;
+    m[1 + 2 * 4] = 7.0;
+    //r.nextDouble() * 100;
+    m[1 + 3 * 4] = 8.0;
+    //r.nextDouble() * 100;
+    m[2 + 0 * 4] = 9.0;
+    //r.nextDouble() * 100;
+    m[2 + 1 * 4] = 10.0;
+    //r.nextDouble() * 100;
+    m[2 + 2 * 4] = 11.0;
+    //r.nextDouble() * 100;
+    m[2 + 3 * 4] = 12.0;
+    //r.nextDouble() * 100;
+    m[3 + 0 * 4] = 13.0;
+    //r.nextDouble() * 100;
+    m[3 + 1 * 4] = 14.0;
+    //r.nextDouble() * 100;
+    m[3 + 2 * 4] = 15.0;
+    //r.nextDouble() * 100;
+    m[3 + 3 * 4] = 16.0;
+    //r.nextDouble() * 100;
   }
 
   static void multiplyMatrices44(
@@ -145,27 +161,42 @@ class Matrix44Array {
 }
 
 class Matrix44 {
-  num m00, m01, m02, m03;
-  num m10, m11, m12, m13;
-  num m20, m21, m22, m23;
-  num m30, m31, m32, m33;
-  void randomSetUp(Random r) {
-    m00 = r.nextDouble() * 100;
-    m01 = r.nextDouble() * 100;
-    m02 = r.nextDouble() * 100;
-    m03 = r.nextDouble() * 100;
-    m10 = r.nextDouble() * 100;
-    m11 = r.nextDouble() * 100;
-    m12 = r.nextDouble() * 100;
-    m13 = r.nextDouble() * 100;
-    m20 = r.nextDouble() * 100;
-    m21 = r.nextDouble() * 100;
-    m22 = r.nextDouble() * 100;
-    m23 = r.nextDouble() * 100;
-    m30 = r.nextDouble() * 100;
-    m31 = r.nextDouble() * 100;
-    m32 = r.nextDouble() * 100;
-    m33 = r.nextDouble() * 100;
+  double m00, m01, m02, m03;
+  double m10, m11, m12, m13;
+  double m20, m21, m22, m23;
+  double m30, m31, m32, m33;
+  void randomSetUp(/*Random r*/) {
+    m00 = 1.0;
+    //r.nextDouble() * 100;
+    m01 = 2.0;
+    //r.nextDouble() * 100;
+    m02 = 3.0;
+    //r.nextDouble() * 100;
+    m03 = 4.0;
+    //r.nextDouble() * 100;
+    m10 = 5.0;
+    //r.nextDouble() * 100;
+    m11 = 6.0;
+    //r.nextDouble() * 100;
+    m12 = 7.0;
+    //r.nextDouble() * 100;
+    m13 = 8.0;
+    //r.nextDouble() * 100;
+    m20 = 9.0;
+    //r.nextDouble() * 100;
+    m21 = 10.0;
+    //r.nextDouble() * 100;
+    m22 = 11.0; //r.nextDouble() * 100;
+    m23 = 12.0;
+    //r.nextDouble() * 100;
+    m30 = 13.0;
+    //r.nextDouble() * 100;
+    m31 = 14.0;
+    //r.nextDouble() * 100;
+    m32 = 15.0;
+    //r.nextDouble() * 100;
+    m33 = 16.0;
+    //r.nextDouble() * 100;
   }
 
   static void multiplyMatrices44(Matrix44 lhs, Matrix44 rhs, Matrix44 out) {
@@ -260,15 +291,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void testMatrixArray() {
     var now = DateTime.now().millisecondsSinceEpoch;
-    var r = Random();
+    //var r = Random();
 
     var lhs = Matrix44Array();
     var rhs = Matrix44Array();
     var out = Matrix44Array();
 
     for (var i = 0; i < 1000000; i++) {
-      lhs.randomSetUp(r);
-      rhs.randomSetUp(r);
+      lhs.randomSetUp(/*r*/);
+      rhs.randomSetUp(/*r*/);
       Matrix44Array.multiplyMatrices44(lhs, rhs, out);
     }
     var t = DateTime.now().millisecondsSinceEpoch - now;
@@ -277,15 +308,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void testMatrixAttribute() {
     var now = DateTime.now().millisecondsSinceEpoch;
-    var r = Random();
+    //var r = Random();
 
     var lhs = Matrix44();
     var rhs = Matrix44();
     var out = Matrix44();
 
     for (var i = 0; i < 1000000; i++) {
-      lhs.randomSetUp(r);
-      rhs.randomSetUp(r);
+      lhs.randomSetUp(/*r*/);
+      rhs.randomSetUp(/*r*/);
       Matrix44.multiplyMatrices44(lhs, rhs, out);
     }
 
@@ -293,15 +324,27 @@ class _MyHomePageState extends State<MyHomePage> {
     print("testMatrixAttribute ${t}ms");
   }
 
-  ffff(Random r) {
-    return r.nextDouble() * 100 + r.nextDouble() * 100;
+  ffff(double i) {
+    //return r.nextDouble() * 100 + r.nextDouble() * 100;
+    double a = i + 1;
+    double b = 2.3;
+    if (a > b) {
+      ++a;
+    } else {
+      b = b + 1;
+    }
+    if (a == b) {
+      b = b + 1;
+    }
+
+    double c = a * b + a / b - pow(a, 2.0);
+    return c;
   }
 
   void testFunction() {
-    var r = Random();
     var now = DateTime.now().millisecondsSinceEpoch;
     for (var i = 0; i < 100000000; i++) {
-      ffff(r);
+      ffff(i.toDouble());
     }
 
     var t = DateTime.now().millisecondsSinceEpoch - now;

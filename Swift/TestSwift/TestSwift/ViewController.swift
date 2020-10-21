@@ -7,24 +7,24 @@
 
 import UIKit
 class Matrix44Array {
-    var m = [Float](repeating: 0, count: 16);
+    var m = [Double](repeating: 0, count: 16);
   func randomSetUp() {
-    m[0 + 0 * 4] = Float.random(in: 0..<1) * 100;
-    m[0 + 1 * 4] = Float.random(in: 0..<1) * 100;
-    m[0 + 2 * 4] = Float.random(in: 0..<1) * 100;
-    m[0 + 3 * 4] = Float.random(in: 0..<1) * 100;
-    m[1 + 0 * 4] = Float.random(in: 0..<1) * 100;
-    m[1 + 1 * 4] = Float.random(in: 0..<1) * 100;
-    m[1 + 2 * 4] = Float.random(in: 0..<1) * 100;
-    m[1 + 3 * 4] = Float.random(in: 0..<1) * 100;
-    m[2 + 0 * 4] = Float.random(in: 0..<1) * 100;
-    m[2 + 1 * 4] = Float.random(in: 0..<1) * 100;
-    m[2 + 2 * 4] = Float.random(in: 0..<1) * 100;
-    m[2 + 3 * 4] = Float.random(in: 0..<1) * 100;
-    m[3 + 0 * 4] = Float.random(in: 0..<1) * 100;
-    m[3 + 1 * 4] = Float.random(in: 0..<1) * 100;
-    m[3 + 2 * 4] = Float.random(in: 0..<1) * 100;
-    m[3 + 3 * 4] = Float.random(in: 0..<1) * 100;
+    m[0 + 0 * 4] = 1.0;//Float.random(in: 0..<1) * 100;
+    m[0 + 1 * 4] = 2.0;//Float.random(in: 0..<1) * 100;
+    m[0 + 2 * 4] = 3.0;//Float.random(in: 0..<1) * 100;
+    m[0 + 3 * 4] = 4.0;//Float.random(in: 0..<1) * 100;
+    m[1 + 0 * 4] = 5.0;//Float.random(in: 0..<1) * 100;
+    m[1 + 1 * 4] = 6.0;//Float.random(in: 0..<1) * 100;
+    m[1 + 2 * 4] = 7.0;//Float.random(in: 0..<1) * 100;
+    m[1 + 3 * 4] = 8.0;//Float.random(in: 0..<1) * 100;
+    m[2 + 0 * 4] = 9.0;//Float.random(in: 0..<1) * 100;
+    m[2 + 1 * 4] = 10.0;//Float.random(in: 0..<1) * 100;
+    m[2 + 2 * 4] = 11.0;//Float.random(in: 0..<1) * 100;
+    m[2 + 3 * 4] = 12.0;//Float.random(in: 0..<1) * 100;
+    m[3 + 0 * 4] = 13.0;//Float.random(in: 0..<1) * 100;
+    m[3 + 1 * 4] = 14.0;//Float.random(in: 0..<1) * 100;
+    m[3 + 2 * 4] = 15.0;//Float.random(in: 0..<1) * 100;
+    m[3 + 3 * 4] = 16.0;//Float.random(in: 0..<1) * 100;
   }
 
   static func multiplyMatrices44(
@@ -99,40 +99,40 @@ class Matrix44Array {
   }
 }
 class Matrix44 {
-    var m00:Float = 0.0
-    var m01:Float = 0.0
-    var m02:Float = 0.0
-    var m03:Float = 0.0
-    var m10:Float = 0.0
-    var m11:Float = 0.0
-    var m12:Float = 0.0
-    var m13:Float = 0.0
-    var m20:Float = 0.0
-    var m21:Float = 0.0
-    var m22:Float = 0.0
-    var m23:Float = 0.0
-    var m30:Float = 0.0
-    var m31:Float = 0.0
-    var m32:Float = 0.0
-    var m33:Float = 0.0
+    var m00:Double = 0.0
+    var m01:Double = 0.0
+    var m02:Double = 0.0
+    var m03:Double = 0.0
+    var m10:Double = 0.0
+    var m11:Double = 0.0
+    var m12:Double = 0.0
+    var m13:Double = 0.0
+    var m20:Double = 0.0
+    var m21:Double = 0.0
+    var m22:Double = 0.0
+    var m23:Double = 0.0
+    var m30:Double = 0.0
+    var m31:Double = 0.0
+    var m32:Double = 0.0
+    var m33:Double = 0.0
     
   func randomSetUp() {
-    m00 = Float.random(in: 0..<1) * 100;
-    m01 = Float.random(in: 0..<1) * 100;
-    m02 = Float.random(in: 0..<1) * 100;
-    m03 = Float.random(in: 0..<1) * 100;
-    m10 = Float.random(in: 0..<1) * 100;
-    m11 = Float.random(in: 0..<1) * 100;
-    m12 = Float.random(in: 0..<1) * 100;
-    m13 = Float.random(in: 0..<1) * 100;
-    m20 = Float.random(in: 0..<1) * 100;
-    m21 = Float.random(in: 0..<1) * 100;
-    m22 = Float.random(in: 0..<1) * 100;
-    m23 = Float.random(in: 0..<1) * 100;
-    m30 = Float.random(in: 0..<1) * 100;
-    m31 = Float.random(in: 0..<1) * 100;
-    m32 = Float.random(in: 0..<1) * 100;
-    m33 = Float.random(in: 0..<1) * 100;
+    m00 = 1.0;//Float.random(in: 0..<1) * 100;
+    m01 = 2.0;//Float.random(in: 0..<1) * 100;
+    m02 = 3.0;//Float.random(in: 0..<1) * 100;
+    m03 = 4.0;//Float.random(in: 0..<1) * 100;
+    m10 = 5.0;//Float.random(in: 0..<1) * 100;
+    m11 = 6.0;//Float.random(in: 0..<1) * 100;
+    m12 = 7.0;//Float.random(in: 0..<1) * 100;
+    m13 = 8.0;//Float.random(in: 0..<1) * 100;
+    m20 = 9.0;//Float.random(in: 0..<1) * 100;
+    m21 = 10.0;//Float.random(in: 0..<1) * 100;
+    m22 = 11.0;//Float.random(in: 0..<1) * 100;
+    m23 = 12.0;//Float.random(in: 0..<1) * 100;
+    m30 = 13.0;//Float.random(in: 0..<1) * 100;
+    m31 = 14.0;//Float.random(in: 0..<1) * 100;
+    m32 = 15.0;//Float.random(in: 0..<1) * 100;
+    m33 = 16.0;//Float.random(in: 0..<1) * 100;
   }
 
     static func multiplyMatrices44(lhs:Matrix44, rhs:Matrix44, out:Matrix44) {
@@ -240,15 +240,30 @@ func testMatrixAttribute() {
   }
 
 
-func ffff()->Float {
-    return Float.random(in: 0..<1) * 100 + Float.random(in: 0..<1) * 100;
+func ffff(i:Double)->Double {
+    //return Float.random(in: 0..<1) * 100 + Float.random(in: 0..<1) * 100;
+    var a:Double = i + 1;
+    var b:Double = 2.3;
+    if (a > b)
+    {
+        a+=1;
+    }
+    else{
+        b = b + 1;
+    }
+    if (a == b)
+    {
+        b = b + 1;
+    }
+    let c:Double  = a * b + a / b - pow(a, 2);
+    return c;
   }
 
 func  testFunction() {
 
     let now = Date().timeIntervalSince1970;
-    for _ in 0..<100000000 {
-      ffff();
+    for i in 0..<100000000 {
+        ffff(i: Double(i));
     }
 
     let t = Date().timeIntervalSince1970 - now;
@@ -258,12 +273,12 @@ func testLoop() {
     let now = Date().timeIntervalSince1970;
 
     let iterations = 2;
-    var sum:Float = 0.0;
+    var sum:Double = 0.0;
     let arrayLength = 100000000;
-    var array = [Float](repeating: 0, count: arrayLength);
+    var array = [Double](repeating: 0, count: arrayLength);
 
     for element in 0..<arrayLength {
-        array[element] = Float(element);
+        array[element] = Double(element);
     }
     for iteration in 0..<iterations{
         for innerloop in 0..<1000000000{

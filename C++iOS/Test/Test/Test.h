@@ -17,22 +17,22 @@ class Matrix44Array {
 public:
   double m[16];
   void randomSetUp() {
-      m[0 + 0 * 4] = (rand() % 100 + 1.0f);
-      m[0 + 1 * 4] = (rand() % 100 + 1.0f);
-      m[0 + 2 * 4] = (rand() % 100 + 1.0f);
-      m[0 + 3 * 4] = (rand() % 100 + 1.0f);
-      m[1 + 0 * 4] = (rand() % 100 + 1.0f);
-      m[1 + 1 * 4] = (rand() % 100 + 1.0f);
-      m[1 + 2 * 4] = (rand() % 100 + 1.0f);
-      m[1 + 3 * 4] = (rand() % 100 + 1.0f);
-      m[2 + 0 * 4] = (rand() % 100 + 1.0f);
-      m[2 + 1 * 4] = (rand() % 100 + 1.0f);
-      m[2 + 2 * 4] = (rand() % 100 + 1.0f);
-      m[2 + 3 * 4] = (rand() % 100 + 1.0f);
-      m[3 + 0 * 4] = (rand() % 100 + 1.0f);
-      m[3 + 1 * 4] = (rand() % 100 + 1.0f);
-      m[3 + 2 * 4] = (rand() % 100 + 1.0f);
-      m[3 + 3 * 4] = (rand() % 100 + 1.0f);
+      m[0 + 0 * 4] = 1.0f;//(rand() % 100 + 1.0f);
+      m[0 + 1 * 4] = 2.0f;//(rand() % 100 + 1.0f);
+      m[0 + 2 * 4] = 3.0f;//(rand() % 100 + 1.0f);
+      m[0 + 3 * 4] = 4.0f;//(rand() % 100 + 1.0f);
+      m[1 + 0 * 4] = 5.0f;//(rand() % 100 + 1.0f);
+      m[1 + 1 * 4] = 6.0f;//(rand() % 100 + 1.0f);
+      m[1 + 2 * 4] = 7.0f;//(rand() % 100 + 1.0f);
+      m[1 + 3 * 4] = 8.0f;//(rand() % 100 + 1.0f);
+      m[2 + 0 * 4] = 9.0f;//(rand() % 100 + 1.0f);
+      m[2 + 1 * 4] = 10.0f;//(rand() % 100 + 1.0f);
+      m[2 + 2 * 4] = 11.0f;//(rand() % 100 + 1.0f);
+      m[2 + 3 * 4] = 12.0f;//(rand() % 100 + 1.0f);
+      m[3 + 0 * 4] = 13.0f;//(rand() % 100 + 1.0f);
+      m[3 + 1 * 4] = 14.0f;//(rand() % 100 + 1.0f);
+      m[3 + 2 * 4] = 15.0f;//(rand() % 100 + 1.0f);
+      m[3 + 3 * 4] = 16.0f;//(rand() % 100 + 1.0f);
   }
 
   static void multiplyMatrices44(
@@ -114,22 +114,22 @@ public:
     double m20, m21, m22, m23;
     double m30, m31, m32, m33;
   void randomSetUp() {
-    m00 = (rand() % 100 + 1.0f);
-    m01 = (rand() % 100 + 1.0f);
-    m02 = (rand() % 100 + 1.0f);
-    m03 = (rand() % 100 + 1.0f);
-    m10 = (rand() % 100 + 1.0f);
-      m11 = (rand() % 100 + 1.0f);
-      m12 = (rand() % 100 + 1.0f);
-      m13 = (rand() % 100 + 1.0f);
-      m20 = (rand() % 100 + 1.0f);
-      m21 = (rand() % 100 + 1.0f);
-      m22 = (rand() % 100 + 1.0f);
-      m23 = (rand() % 100 + 1.0f);
-      m30 = (rand() % 100 + 1.0f);
-      m31 = (rand() % 100 + 1.0f);
-      m32 = (rand() % 100 + 1.0f);
-      m33 = (rand() % 100 + 1.0f);
+      m00 = 1.0f;//(rand() % 100 + 1.0f);
+      m01 = 2.0f;//(rand() % 100 + 1.0f);
+      m02 = 3.0f;//(rand() % 100 + 1.0f);
+      m03 = 4.0f;//(rand() % 100 + 1.0f);
+      m10 = 5.0f;//(rand() % 100 + 1.0f);
+      m11 = 6.0f;//(rand() % 100 + 1.0f);
+      m12 = 7.0f;//(rand() % 100 + 1.0f);
+      m13 = 8.0f;//(rand() % 100 + 1.0f);
+      m20 = 9.0f;//(rand() % 100 + 1.0f);
+      m21 = 10.0f;//(rand() % 100 + 1.0f);
+      m22 = 11.0f;//(rand() % 100 + 1.0f);
+      m23 = 12.0f;//(rand() % 100 + 1.0f);
+      m30 = 13.0f;//(rand() % 100 + 1.0f);
+      m31 = 14.0f;//(rand() % 100 + 1.0f);
+      m32 = 15.0f;//(rand() % 100 + 1.0f);
+      m33 = 16.0f;//(rand() % 100 + 1.0f);
   }
 
   static void multiplyMatrices44(Matrix44& lhs, Matrix44& rhs, Matrix44& out) {
@@ -235,15 +235,32 @@ void testMatrixAttribute() {
   printf("testMatrixAttribute  %f ms\n",double(duration.count()));
 }
 
-float ffff() {
+double ffff(double i) {
   //return r.nextDouble() * 100 + r.nextDouble() * 100;
-    return (rand() % 100 + 1.0f) + (rand() % 100 + 1.0f);
+    //return (rand() % 100 + 1.0f) + (rand() % 100 + 1.0f);
+    double a = i + 1;
+    double b = 2.3f;
+    if (a > b)
+    {
+        ++a;
+    }
+    else
+    {
+        b = b + 1;
+    }
+    if (a == b)
+    {
+        b = b + 1;
+    }
+    
+    double c = a * b + a / b - pow(a, 2.0f);
+    return c;
 }
 
 void testFunction() {
     auto start = system_clock::now();
   for (auto i = 0; i < 100000000; i++) {
-    ffff();
+    ffff(i);
   }
     auto duration = duration_cast<milliseconds>(system_clock::now() - start);
     printf("testFunction %f ms\n",double(duration.count()));

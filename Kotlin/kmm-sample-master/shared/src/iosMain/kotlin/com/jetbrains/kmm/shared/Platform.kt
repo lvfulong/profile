@@ -20,22 +20,22 @@ class Matrix44Array {
 	var m = DoubleArray(16);
 
    fun randomSetUp() {
-    this.m[0 + 0 * 4] = Random.nextDouble(100.0);
-    this.m[0 + 1 * 4] = Random.nextDouble(100.0);
-    this.m[0 + 2 * 4] = Random.nextDouble(100.0);
-    this.m[0 + 3 * 4] = Random.nextDouble(100.0);
-    this.m[1 + 0 * 4] = Random.nextDouble(100.0);
-    this.m[1 + 1 * 4] = Random.nextDouble(100.0);
-    this.m[1 + 2 * 4] = Random.nextDouble(100.0);
-    this.m[1 + 3 * 4] = Random.nextDouble(100.0);
-    this.m[2 + 0 * 4] = Random.nextDouble(100.0);
-    this.m[2 + 1 * 4] = Random.nextDouble(100.0);
-    this.m[2 + 2 * 4] = Random.nextDouble(100.0);
-    this.m[2 + 3 * 4] = Random.nextDouble(100.0);
-    this.m[3 + 0 * 4] = Random.nextDouble(100.0);
-    this.m[3 + 1 * 4] = Random.nextDouble(100.0);
-    this.m[3 + 2 * 4] = Random.nextDouble(100.0);
-    this.m[3 + 3 * 4] = Random.nextDouble(100.0);
+    this.m[0 + 0 * 4] = 1.0;//Random.nextDouble(100.0);
+    this.m[0 + 1 * 4] = 2.0;//Random.nextDouble(100.0);
+    this.m[0 + 2 * 4] = 3.0;//Random.nextDouble(100.0);
+    this.m[0 + 3 * 4] = 4.0;//Random.nextDouble(100.0);
+    this.m[1 + 0 * 4] = 5.0;//Random.nextDouble(100.0);
+    this.m[1 + 1 * 4] = 6.0;//Random.nextDouble(100.0);
+    this.m[1 + 2 * 4] = 7.0;//Random.nextDouble(100.0);
+    this.m[1 + 3 * 4] = 8.0;//Random.nextDouble(100.0);
+    this.m[2 + 0 * 4] = 9.0;//Random.nextDouble(100.0);
+    this.m[2 + 1 * 4] = 10.0;//Random.nextDouble(100.0);
+    this.m[2 + 2 * 4] = 11.0;//Random.nextDouble(100.0);
+    this.m[2 + 3 * 4] = 12.0;//Random.nextDouble(100.0);
+    this.m[3 + 0 * 4] = 13.0;//Random.nextDouble(100.0);
+    this.m[3 + 1 * 4] = 14.0;//Random.nextDouble(100.0);
+    this.m[3 + 2 * 4] = 15.0;//Random.nextDouble(100.0);
+    this.m[3 + 3 * 4] = 16.0;//Random.nextDouble(100.0);
   }
 companion object {
   fun multiplyMatrices44(lhs:Matrix44Array,rhs:Matrix44Array,out:Matrix44Array){
@@ -143,22 +143,22 @@ class Matrix44 {
     var m32:Double = 0.0;
     var m33:Double = 0.0;
     fun randomSetUp() {
-        this.m00 = Random.nextDouble(100.0);
-        this.m01 = Random.nextDouble(100.0);
-        this.m02 = Random.nextDouble(100.0);
-        this.m03 = Random.nextDouble(100.0);
-        this.m10 = Random.nextDouble(100.0);
-        this.m11 = Random.nextDouble(100.0);
-        this.m12 = Random.nextDouble(100.0);
-        this.m13 = Random.nextDouble(100.0);
-        this.m20 = Random.nextDouble(100.0);
-        this.m21 = Random.nextDouble(100.0);
-        this.m22 = Random.nextDouble(100.0);
-        this.m23 = Random.nextDouble(100.0);
-        this.m30 = Random.nextDouble(100.0);
-        this.m31 = Random.nextDouble(100.0);
-        this.m32 = Random.nextDouble(100.0);
-        this.m33 = Random.nextDouble(100.0);
+        this.m00 = 1.0;//Random.nextDouble(100.0);
+        this.m01 = 2.0;//Random.nextDouble(100.0);
+        this.m02 = 3.0;//Random.nextDouble(100.0);
+        this.m03 = 4.0;//Random.nextDouble(100.0);
+        this.m10 = 5.0;//Random.nextDouble(100.0);
+        this.m11 = 6.0;//Random.nextDouble(100.0);
+        this.m12 = 7.0;//Random.nextDouble(100.0);
+        this.m13 = 8.0;//Random.nextDouble(100.0);
+        this.m20 = 9.0;//Random.nextDouble(100.0);
+        this.m21 = 10.0;//Random.nextDouble(100.0);
+        this.m22 = 11.0;//Random.nextDouble(100.0);
+        this.m23 = 12.0;//Random.nextDouble(100.0);
+        this.m30 = 13.0;//Random.nextDouble(100.0);
+        this.m31 = 14.0;//Random.nextDouble(100.0);
+        this.m32 = 15.0;//Random.nextDouble(100.0);
+        this.m33 = 16.0;//Random.nextDouble(100.0);
     }
     companion object {
     fun multiplyMatrices44(lhs:Matrix44, rhs:Matrix44, out:Matrix44) {
@@ -248,7 +248,7 @@ fun testMatrixAttribute() {
 }
 
 
-fun ffff(i:Double) {
+fun ffff(i:Double):Double{
     var a = i + 1;
     var b = 2.3;
     if (a > b) {
@@ -261,10 +261,11 @@ fun ffff(i:Double) {
         b = b + 1;
     }
     var c = a * b + a / b -  a.pow(2.0);
+    return c;
 }
 fun testFunction() {
     val now = getTimeMillis();
-    for ( i in 0 until 10000000000) {
+    for ( i in 0 until 100000000) {
         ffff(i.toDouble());
     }
     println("testFunction " + (getTimeMillis() - now));
