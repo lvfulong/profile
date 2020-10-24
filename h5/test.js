@@ -227,6 +227,9 @@ function ffff(i) {
     } else {
         b = b + 1;
     }
+    if (a == b) {
+        b = b + 1;
+    }
     var c = a * b + a / b - Math.pow(a, 2);
     return c;
 }
